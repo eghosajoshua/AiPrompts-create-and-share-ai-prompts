@@ -22,7 +22,7 @@ const ProfilePage = () => {
         console.log(err);
       }
     }
-  });
+  }, []);
 
   const handleDelete = (id: string) => {
     fetch("/api/modify-prompts/" + id, {
