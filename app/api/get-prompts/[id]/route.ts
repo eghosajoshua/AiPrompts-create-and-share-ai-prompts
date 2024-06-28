@@ -2,6 +2,8 @@ import { connectDb } from "@/utils/db";
 import { Prompt } from "@/models/prompt";
 import { User } from "@/models/user";
 
+export const dynamic = "force-dynamic";
+
 export const GET = async (
   req: Request,
   { params }: { params: { id: string } }
