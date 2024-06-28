@@ -5,8 +5,6 @@ let isConnected = false;
 export const connectDb = async () => {
   mongoose.set("strictQuery", true);
   const options: any = {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
     dbName: "share-it",
   };
 
