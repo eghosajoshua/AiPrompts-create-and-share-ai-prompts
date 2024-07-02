@@ -4,6 +4,10 @@ import { connectDb } from "@/utils/db";
 import { User } from "@/models/user";
 import { Prompt } from "@/models/prompt";
 
+console.log({
+  clientId: process.env.GOOGLE_CLIENT_ID || "not found",
+  clientSecret: process.env.GOOGLE_CLIENT_SECRET || "not fo",
+});
 const handler = NextAuth({
   providers: [
     GoogleProvider({
