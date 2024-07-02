@@ -22,7 +22,7 @@ const Feed = ({
   const { data: session } = useSession();
   const path = usePathname();
   return (
-    <div className="flex  overflow-hidden justify-center items-center p-4 bg-white flex-col border-b-2 flex-1 border-gray-300 rounded-lg shadow-lg w-[250px] min-w-fit">
+    <div className="flex  overflow-hidden justify-center items-center p-4 bg-white flex-col border-b-2 flex-1 border-gray-300 rounded-lg shadow-lg w-full min-w-fit">
       <Link
         href={`/profile/${user?._id}`}
         className="flex w-full items-center gap-2"

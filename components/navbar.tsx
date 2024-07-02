@@ -31,7 +31,7 @@ const NavBar = () => {
           className="font-bold hidden text-black
          sm:flex"
         >
-          AiPrompt
+          AiPrompts
         </p>
       </Link>
       {/* navigation */}

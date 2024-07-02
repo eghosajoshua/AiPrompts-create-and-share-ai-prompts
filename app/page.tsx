@@ -57,7 +57,7 @@ const Home = () => {
           onChange={(e) => handleSearchChange(e)}
         />
       </div>
-      <div className="max-w-2xl justify-center items-center mt-5 m-auto flex flex-wrap gap-3">
+      <div className="max-w-2xl justify-center items-center mt-5 m-auto grid md:grid-cols-2 gap-3">
         {displayPrompt.map(
           (pData: { prompt: string; hashtag: string; user: {} }, index) => (
             <Feed
