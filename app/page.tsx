@@ -7,7 +7,7 @@ const Home = () => {
   const [displayPrompt, setDisplayPrompt] = useState([]);
 
   useEffect(() => {
-    fetch("/api/get-prompts", { cache: "no-store", next: { revalidate: 10 } })
+    fetch("/api/get-prompts")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
