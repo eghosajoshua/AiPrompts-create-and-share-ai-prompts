@@ -87,6 +87,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Eghosa joshua - [eghosajohsua@gmail.com](mailto:eghosajohsua@gmail.com)
+Eghosa Joshua - [eghosajohsua@gmail.com](mailto:eghosajohsua@gmail.com)
 
-Project Link: [https://github.com/eghosajoshua/AiPrompts-create-and-share-ai-prompts](https://github.com/your-username/AiPrompts)
+Author Portfolio: [https://www.eghosajoshua.com](https://www.eghosajoshua.com)
