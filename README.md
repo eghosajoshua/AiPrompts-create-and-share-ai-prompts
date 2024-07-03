@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AiPrompts
+
+AiPrompts is a collaborative platform that allows users to share and discover useful AI prompts. Built with Next.js, it provides a seamless and interactive user experience. The platform includes Google authentication for secure login and utilizes MongoDB for robust data storage.
+
+## Features
+
+- **Next.js**: Utilized for building a fast and interactive web application.
+- **Google Authentication**: Secure login system powered by Google.
+- **MongoDB**: Robust data storage solution.
+- **Prompt Sharing**: Users can share and discover AI prompts.
+- **Responsive Design**: Fully responsive design ensuring a great user experience across all devices.
+
+## View Demo
+
+[![View Demo](https://img.shields.io/badge/View-Demo-green)](https://aiprompts-eight.vercel.app/)
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these simple steps.
 
-```bash
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/en/) (which includes npm)
+- [MongoDB](https://www.mongodb.com/)
+
+### Installation
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/eghosajoshua/AiPrompts-create-and-share-ai-prompts
+   ```
+
+2. Navigate to the project directory:
+
+   ```sh
+   cd AiPrompts
+   ```
+
+3. Install the dependencies:
+
+   ```sh
+   npm install
+   ```
+
+4. Create a `.env.local` file in the root directory and add your environment variables:
+
+   ```sh
+   NEXT_PUBLIC_GOOGLE_CLIENT_ID=your-google-client-id
+   NEXT_PUBLIC_GOOGLE_CLIENT_SECRET=your-google-client-secret
+   MONGODB_URI=your-mongodb-uri
+   NEXTAUTH_URL=http://localhost:3000
+   NEXTAUTH_URL_INTERNAL=http://localhost:3000
+   NEXTAUTH_SECRET=uxBmQIUPF0cGBA6TmnaNxRRuNsCD3gMbe2SQfqk1QQM=
+   ```
+
+### Usage
+
+To start the development server, run:
+
+```sh
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will open the project in your default web browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To create a production build, run:
 
-## Learn More
+```sh
+npm run build
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+The optimized build will be created in the `.next` directory.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Distributed under the MIT License. See `LICENSE` for more information.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contact
+
+Eghosa joshua - [eghosajohsua@gmail.com](mailto:eghosajohsua@gmail.com)
+
+Project Link: [https://github.com/eghosajoshua/AiPrompts-create-and-share-ai-prompts](https://github.com/your-username/AiPrompts)
