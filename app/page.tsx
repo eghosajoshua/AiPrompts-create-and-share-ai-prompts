@@ -1,18 +1,19 @@
 "use client";
 import Feed from "@/components/feed";
-import { useState, useEffect, ReactEventHandler, ChangeEvent } from "react";
+import { useState, useEffect, ChangeEvent } from "react";
 
 const Home = () => {
   const [data, setData] = useState([]);
   const [displayPrompt, setDisplayPrompt] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch("/api/get-prompts")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
+        setLoading(false);
         setDisplayPrompt(data);
-        console.log(data);
       });
   }, []);
 
@@ -57,18 +58,22 @@ const Home = () => {
           onChange={(e) => handleSearchChange(e)}
         />
       </div>
-      <div className="max-w-2xl justify-center items-center mt-5 m-auto grid md:grid-cols-2 gap-3">
-        {displayPrompt.map(
-          (pData: { prompt: string; hashtag: string; user: {} }, index) => (
-            <Feed
-              prompt={pData.prompt}
-              hashtag={pData.hashtag}
-              user={pData.user}
-              key={index}
-            />
-          )
-        )}
-      </div>
+      {loading ? (
+        <p className="m-10">Loading...</p>
+      ) : (
+        <div className="max-w-2xl justify-center items-center mt-5 m-auto grid md:grid-cols-2 gap-3">
+          {displayPrompt.map(
+            (pData: { prompt: string; hashtag: string; user: {} }, index) => (
+              <Feed
+                prompt={pData.prompt}
+                hashtag={pData.hashtag}
+                user={pData.user}
+                key={index}
+              />
+            )
+          )}
+        </div>
+      )}
     </section>
   );
 };
