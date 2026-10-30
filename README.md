@@ -45,7 +45,7 @@ Make sure you have the following installed:
    npm install
    ```
 
-4. Create a `.env.local` file in the root directory and add your environment variables:
+4. Create a `.env` file in the root directory and add your environment variables:
 
    ```sh
    NEXT_PUBLIC_GOOGLE_CLIENT_ID=your-google-client-id

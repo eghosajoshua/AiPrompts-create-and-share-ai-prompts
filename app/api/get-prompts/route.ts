@@ -7,5 +7,6 @@ export const dynamic = "force-dynamic";
 export const GET = async (req: Request, res: Response) => {
   await connectDb();
   const prompts = await Prompt.find({}).populate("user");
+  console.log(prompts, "prompts");
   return new Response(JSON.stringify(prompts));
 };
