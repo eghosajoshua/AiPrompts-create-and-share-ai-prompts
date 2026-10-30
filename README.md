@@ -10,10 +10,6 @@ AiPrompts is a collaborative platform that allows users to share and discover us
 - **Prompt Sharing**: Users can share and discover AI prompts.
 - **Responsive Design**: Fully responsive design ensuring a great user experience across all devices.
 
-## View Demo
-
-[![View Demo](https://img.shields.io/badge/View-Demo-green)](https://aiprompts-eight.vercel.app/)
-
 ## Getting Started
 
 To get a local copy up and running, follow these simple steps.
@@ -89,4 +85,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Eghosa Joshua - [eghosajohsua@gmail.com](mailto:eghosajohsua@gmail.com)
 
-Author Portfolio: [https://www.eghosajoshua.com](https://www.eghosajoshua.com)
+Author Portfolio: [https://www.eghosa.site](https://www.eghosa.site)
