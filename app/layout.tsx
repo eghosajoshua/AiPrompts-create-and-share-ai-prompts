@@ -14,6 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/images/logo.png" />
+      </head>
       <Provider>
         <body className="bg-slate-100">
           <main>
